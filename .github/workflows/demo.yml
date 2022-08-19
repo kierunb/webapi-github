@@ -16,9 +16,9 @@ jobs:
       - run: echo "The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       
       # Running the extenrnal script
-      - name: Run external script
-        run: ./.github/scripts/test.sh
-        shell: bash
+      #- name: Run external script
+      #  run: ./.github/scripts/test.sh
+      #  shell: bash
       
       #Run GitHub CLI
       - run: gh pr comment $PR_URL --body "Welcome to the repository!"
